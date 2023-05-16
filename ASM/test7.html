@@ -1,0 +1,55 @@
+<div class="main-banner" >
+    <img src="images/nenDangNhap.jpeg" class="img-container"  alt="">
+
+<div class="video-overlay header-text ">
+  <center>
+    <form action="dangNhap" method="post" style="text-align: left;width: 60%;padding-top: 70px; color: white;overflow-y: hidden;overflow-y: scroll;height: 88vh; padding-right: 20px;padding-left: 20px">
+        <div class="row">
+            <center>
+                <h3 style="color: #A59565;">ĐĂNG KÝ </h3>
+
+            </center>
+            <hr>
+            <div class="col-md-6">
+                <label for="uname"><b>Số điện thọai</b></label>
+                <input class="ip" type="text" placeholder="Số điện thoại?" value="${form.sdt}"
+                    name="sdt" required>
+                <!-- <small style="color: yellow">${message1}</small> <br> -->
+                <label for="psw"><b>Mật khẩu</b></label>
+                <input class="ip" type="password" placeholder="Mật khẩu?" name="matKhau"
+                    value="${form.matKhau}" required>
+                <!-- <small style="color: yellow">${message2}</small><br> -->
+                <label for="psw2"><b>Mật khẩu xác nhận</b></label>
+                <input class="ip" type="password" placeholder="Mật khẩu xác nhận?" name="matKhau2"
+                    required>
+                <!-- <small style="color: yellow">${message3}</small><br> -->
+            </div>
+            <div class="col-md-6">
+                <label for="uname"><b>Họ tên</b></label> <br>
+                <input class="ip" type="text" value="${form.tenND}" placeholder="Enter Fullname"
+                    name="tenND" required>
+                <label for="uname"><b>Email</b></label>
+                <input class="ip" type="email" placeholder="Email?" value="${form.email}" name="email"
+                    required>
+                <!-- <small style="color: yellow">${message4}</small><br> -->
+                <label for="uname"><b>Giới tính</b></label> <br> <br>
+                <label> <input ${form.gioiTinh?'checked':' '}  type="radio" name="gioiTinh" id="input" value="true" checked="checked"> Nam
+            </label> &nbsp &nbsp &nbsp &nbsp
+            <label> <input ${form.gioiTinh?' ':' checked'} type="radio" name="gioiTinh" id="input"
+                        value="false"> Nữ
+                </label>
+                <input class="ip" type="hidden" name="admin" value="false">
+            </div>
+            <center>
+                <button class="lgin" type="submit">Đăng ký</button>
+            </center>
+          
+        </div>
+        <a href="/ASM_Java4/index">
+            <button type="button" class="cancelbtn">Trang chủ</button>
+        </a> <span class="psw">Chưa có <a href="/ASM_Java4/dangKy" style="color: #F5A425;">tài
+                khoản?</a></span>
+    </form>
+  </center>
+</div>
+</div>

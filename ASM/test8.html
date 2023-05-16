@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  overflow: hidden; /* Đảm bảo phần tử cha wrap đúng các phần tử con bên trong */
+}
+
+img {
+  float: left; /* Đặt ảnh bên trái */
+  margin-right: 10px; /* Tạo khoảng cách giữa ảnh và mô tả */
+}
+
+.description {
+  overflow: hidden; /* Đảm bảo mô tả không tràn ra ngoài */
+  clear: both; /* Đặt clear để phần tử này tràn xuống dưới các phần tử trước đó */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container" style="width: 15%;">
+        <img src="images/caMap.jpg" alt="Ảnh">
+        <p class="description">Đây là một dòng mô tả dài.</p>
+      </div>
+      
+      
+</body>
+</html>

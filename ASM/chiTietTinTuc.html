@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f737751420.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tin tức chi tiết</title>
+</head>
+
+<body style="padding-top: 70px; background-color: #F0F2F5;padding-bottom: 70px;">
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-light" style="border: none;padding-top: 0; padding-bottom: 0;">
+            <div class="container">
+                <a class="navbar-brand" href="#"
+                    style="color: #F27323;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;">VIE_SONET</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Trang chủ <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><small>Tin tức</small></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2 input-hbh"
+                            style="border-radius: 0; border: none; border-bottom: 1px solid gray;" type="text"
+                            placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" hidden type="submit">Search</button>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><small><img src="images/avt.jpg" width="30px"
+                                        style="border-radius: 50%;" alt=""></small></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId"
+                                style="width: 350px; padding-left: 3px;">
+                                <div class="profile-darkButton">
+                                    <div class="user-profile">
+                                        <img src="images/avt.jpg" alt="">
+                                        <div>
+                                            <p> Alex Carry</p>
+                                            <small>Xem trang cá nhân của bạn</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item"
+                                    style="display: flex; justify-content: space-between; align-items: center;">
+                                    <small>Chế độ tối:</small>
+                                    <div class="nut">
+                                        <input type="checkbox" class="checkbox" id="checkbox"
+                                            onclick="toggleDarkMode()">
+                                        <label class="switch" for="checkbox">
+                                            <span class="slider" style="width: 12px;height: 12px;"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <a class="dropdown-item" href="#"><small>Đăng nhập</small></a>
+                                <a class="dropdown-item" href="#"><small>Đăng ký</small></a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row" style="position: relative;">
+            <div class="col-md-8">
+                <h2><b style="color: #0D69B3;">Loài cá mập có thể nín thở dưới biển sâu</b></h2>
+                <h5>Chiến thuật nín thở giúp cá mập đầu búa chịu nhiệt độ lạnh cóng khi săn mồi ở độ sâu gần một kilomet
+                    dưới mặt biển.</h5>
+                <img src="images/caMap.jpg" width="100%" alt="Cá mập đầu búa săn mồi ở độ sâu cực lớn. Ảnh: Earth">
+                <h5 style="line-height: 30px; text-align: justify;">Cá mập đầu búa có thể nín thở khi lặn sâu xuống vùng
+                    nước lạnh cóng. Nghiên cứu công bố hôm 12/5
+                    trên tạp chí Science hé lộ chiến thuật này cho phép loài cá quen sống ở vùng nước ấm điều phối nhiệt
+                    độ khi đi săn. Theo Mark Royer, nhà sinh vật học cá mập ở Đại học Hawaii, trưởng nhóm nghiên cứu, kỹ
+                    thuật này hoàn toàn gây bất ngờ cho ông và cộng sự. Đây là loại hành vi chưa bao giờ được quan sát ở
+                    bất kỳ loài cá lặn sâu nào, đồng thời dấy lên câu hỏi về mức độ phổ biến của hành vi nín thở ở những
+                    loài khác.
+                    <br>
+                    Cá mập đầu búa cực kỳ nguy cấp thường dựa vào chuyển động về phía trước để đẩy nước qua mang, cho
+                    phép chúng lọc oxy cần thiết để thở. Tuy nhiên, khi cá mập đầu búa bơi sâu khoảng 800 m để bắt mực
+                    và con mồi khác, nước lạnh hơn có thể ảnh hưởng tới trao đổi chất, chức năng tim mạch và thị lực,
+                    mọi yếu tố làm giảm khả năng săn mồi của chúng.
+                    <br>
+                    Bằng cách đóng mang và miệng để nín thở, cá mập đầu búa có thể hạn chế tiếp xúc với nước lạnh. Một
+                    số loài như cá ngừ vây xanh và cá mập mako có cấu tạo cơ thể đặc biệt cho phép chúng bảo tồn nhiệt
+                    lượng cơ thể trong nước lạnh, nhưng cá mập đầu búa không có lợi thế đó. Đấy là lý do tại sao một số
+                    nhà khoa học đặt giả thuyết cá mập đầu búa duy trì nhiệt lượng cơ thể bằng cách sử dụng quán tính
+                    nhiệt đơn giản, tức dựa vào kích thước cơ thể lớn để giữ nhiệt độ và mang nhiệt lượng theo khi chúng
+                    lặn ở vùng biển lạnh sâu. Tuy nhiên, những cảm biến nhỏ nhóm nghiên cứu đặt trên một con cá mập đầu
+                    búa trưởng thành, cho thấy quán tính nhiệt không phải lý do chúng giữ ấm trong chuyến đi săn dưới
+                    biển sâu.
+                    <br>
+                    Trong nghiên cứu, nhóm của Royer phân tích thông tin chi tiết về hành vi bơi, độ sâu và vị trí của
+                    một nhóm 6 con cá mập đực gắn thẻ. Tổng cộng, chúng đã thực hiện hơn 100 chuyến lặn quanh Hawaii
+                    trong vòng vài tuần. Cảm biến cũng ghi lại nhiệt độ cơ bắp của chúng trong những chuyến lặn đêm lặp
+                    lại này. Kết hợp với mô hình, dữ liệu chỉ ra cá mập duy trì nhiệt độ cơ thể cả khi chúng ở mặt nước
+                    khoảng 26,7 độ C và khi chúng lặn sâu hơn 762 m, nơi nhiệt độ giảm còn 5 độ C.
+                    <br>
+                    Nhiệt độ cơ thể của cá mập thực sự giảm khi chúng bơi lên cao và tới vùng nước ấm hơn ở nửa chừng
+                    quãng đường quay lại mặt nước, chúng mở mang để thu thập oxy cần thiết. Đó không phải những gì nhóm
+                    nghiên cứu dự đoán với quán tính nhiệt. Dù không quan sát cá mập thực sự đóng mang, họ nghi ngờ đó
+                    là những gì xảy ra. Để xác nhận giả thuyết nín thở, Roger và cộng sự sẽ cần gắn camera vào vây ngực
+                    của cá mập đầu búa để quan sát mang mở và đóng khi cá mập lặn.
+                    <br>
+                    Nhóm nghiên cứu vẫn chưa rõ loài cá mập dài 3,7 m học được kỹ năng nín thở bằng cách nào. Theo
+                    Royer, có thể chúng học từ tương tác xã hội với con cá mập đầu búa khác. Một bằng chứng khác củng cố
+                    giả thuyết của họ là thước phim từ phương tiện điều khiển từ xa cho thấy cá mập đầu búa trưởng thành
+                    bơi ở Tanzania tại độ sâu hơn 914 m với phần mang đóng lại. Nếu cá mập đầu búa nín thở khi kiếm ăn
+                    dưới biển sâu, chúng có thể chịu được môi trường nồng độ oxy thấp đang ngày càng phổ biến trên thế
+                    giới. Điều đó có thể giải thích sự tồn tại của chúng ở vùng biển ít oxy tại vịnh California.
+
+                </h5>
+                <div>
+                    <hr width="30%">
+                    <b>Bình luận:</b>
+                    <form action="">
+                        <input type="text" class="button-hbh" style="width: 80%;" placeholder="Nhận xét của bạn">
+                        <button class="button-hbh" style="background: #A59565; color: white;">Bình luận</button>
+                    </form>
+                    <div style="overflow-y: hidden; overflow-y: scroll; height: 88vh;">
+
+
+                        <hr style="width: 30%;">
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Bùi Minh Trung</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Chơi được nhiều game khá tốt Liên quân,
+                                PUBG</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Huỳnh Tuấn Vỹ</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Camera tốt để chụp hình cùng ny quê Sa
+                                Đéc</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                        <div>
+                            <span style="color:#A59565 ;"><i class="fa-regular fa-user"></i> Trần Văn Minh Hiếu</span>
+                            <br>
+                            <small><i class="fa-regular fa-comment"></i> Mua đc giá 16.8 cảm thấy khá hời, pin trâu k 1
+                                vết
+                                xước</small>
+                            <hr style="width: 10%;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3"
+                style="position: fixed; top: 70px; right: 10px; height: 80vh; overflow-y: hidden; overflow-y: scroll;">
+                <b>Xem nhiều</b>
+                <hr>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/caMap.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        Loài cá mập có thể nín thở dưới biển sâu
+                    </div>
+                    <center>
+                        <hr style="margin-top: 10px; border: 1px solid #E5E5E5; width: 100%;">
+                    </center>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/caMap.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        Loài cá mập có thể nín thở dưới biển sâu
+                    </div>
+                    <center>
+                        <hr style="margin-top: 10px; border: 1px solid #E5E5E5; width: 100%;">
+                    </center>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/caMap.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        Loài cá mập có thể nín thở dưới biển sâu
+                    </div>
+                    <center>
+                        <hr style="margin-top: 10px; border: 1px solid #E5E5E5; width: 100%;">
+                    </center>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/caMap.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        Loài cá mập có thể nín thở dưới biển sâu
+                    </div>
+                    <center>
+                        <hr style="margin-top: 10px; border: 1px solid #E5E5E5; width: 100%;">
+                    </center>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        var header = document.querySelector('header');
+        var lastScrollTop = 0;
+        window.addEventListener('scroll', function () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (lastScrollTop == 0) {
+                document.getElementById("container").style.marginTop = "70px";
+            }
+            if (scrollTop > lastScrollTop) {
+                header.classList.add('hidden');
+                document.getElementById("container").style.marginTop = "10px";
+                document.getElementById("tinTuc").style.top = "10px";
+                document.getElementById("danhSachBanBe").style.top = "10px";
+
+            } else if (scrollTop < lastScrollTop) {
+                header.classList.remove('hidden');
+                document.getElementById("container").style.marginTop = "70px";
+                document.getElementById("tinTuc").style.top = "70px";
+                document.getElementById("danhSachBanBe").style.top = "70px";
+            }
+            lastScrollTop = scrollTop;
+        });
+
+
+    </script>
+    <script>
+        function toggleDarkMode() {
+            var body = document.body;
+            var header = document.querySelector('.header');
+            var navlink = document.querySelectorAll('.nav-link');
+            var a = document.querySelectorAll('a');
+            var inputhbh = document.querySelector('.input-hbh');
+            body.classList.toggle("dark-mode");
+            header.classList.toggle("dark-mode2");
+            inputhbh.classList.toggle("dark-mode2");
+            inputhbh.style.color = "white";
+            document.querySelector('.dropdown-menu').classList.toggle("dark-mode2");
+
+            document.querySelector('textarea').style.color = "white";
+            for (var i = 0; i < navlink.length; i++) {
+                navlink[i].style.color = "white";
+            }
+            for (var i = 0; i < a.length; i++) {
+                a[i].style.color = "white";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
