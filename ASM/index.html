@@ -115,11 +115,45 @@
                     </div>
 
                     <div class="post-upload-textarea">
-                        <textarea name="" placeholder="Bạn muốn đăng gì?" id="" cols="30" rows="3"></textarea>
+                        <textarea name="" placeholder="Bạn muốn đăng gì?" id="" cols="30" rows="3" ></textarea>
                         <div class="add-post-links">
-                            <a href="#"><img src="images/photo.png" style="width: 20px;
-                                margin-right: 13px;" alt="">Photo/Video</a>
+                            <button data-bs-toggle="modal" href="#exampleModalToggle" class="btn" type="button"> 
+                                <a href="#"><img src="images/photo.png" style="width: 20px;
+                                    margin-right: 13px;">Photo/Video</a>
+                            </button>
                         </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel"><b style="margin-left: 170px;">Đăng bài viết</b></h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="user-profile">
+                                        <img src="images/avt.jpg">
+                                        <div>
+                                            <p> Alex Carry</p>
+                                            <small>Public <i class="fas fa-caret-down"></i></small>
+                                        </div>
+                                    </div> <br>
+                                    <textarea  name="" placeholder="Bạn muốn đăng gì?" id="" cols="30" rows="3"></textarea><br>
+                                    <center><img id="img" src="" width="45%" style="border-radius: 10px;"></center>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="inputGroupFile01"><img src="images/photo.png" style="width: 20px;
+                                            margin-right: 13px;">Photo/Video</label>
+                                        <input type="file" class="form-control" id="inputGroupFile01">
+                                      </div>
+                                      
+                                  <button style="width: 500px;" class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Đăng bài</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                          
                     </div>
 
                 </div>
@@ -290,37 +324,48 @@
                 <b>Lời mời kết bạn(5)</b>
                     <hr width="20%">
                     <div style="margin-bottom: 20px;">
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" alt="">
+                        <div class="user-profile" style="padding: 20px;">
+                            <img src="images/avt.jpg" >
                             <div>
-                                <p> Alex Carry</p>
-                                <button name="" id="" class="btn" href="#" role="button"
-                                    style="background-color: #0D69B3; padding: 1px; color: white;height: 20px; line-height: 0; padding-top: 0;"><small>Xác
-                                        nhận</small></button>
-                                <button name="" id="" class="btn" href="#" role="button"
-                                    style="background-color: #F3F3F3; padding: 2px; line-height: 0; padding-top: 0;"><small>Xóa</small></button>
+                                <p> Alex Carry </p> 
+                                <button name="" id="" class="btn btn-primary" href="#" role="button"
+                                    style=" padding: 1px; height: 30px; line-height: 0; padding-top: 0; width: 80px;"><small>Xác nhận</small></button>
+                                <button name="" id="" class="btn btn-secondary" href="#" role="button"
+                                style="padding: 1px; height: 30px; line-height: 0; padding-top: 0; width: 80px;">Xóa</button>
                             </div>
                         </div>
                     </div>
                 <b>Danh sách bạn bè</b>
                 <div class="user-profile" style="margin-bottom: 10px;">
-                    <img src="images/avt.jpg" style="width: 35px;" alt="">
+                    <img src="images/avt.jpg" style="width: 55px;" alt="">
                     <div>
                         <p><b><small>Alex Carry</small></b></p>
                         <small><small>Hoạt động lần cuối:16 giờ trước</small></small>
                     </div>
                 </div>
                 <div class="user-profile" style="margin-bottom: 10px;">
-                    <img src="images/avt.jpg" style="width: 35px;" alt="">
+                    <img src="images/avt.jpg" style="width: 55px;" alt="">
                     <div>
-                        <p> Alex Carry</p>
-                        <small>Hoạt động lần cuối:16 giờ trước</small>
+                        <p><b><small>Alex Carry</small></b></p>
+                        <small><small>Hoạt động lần cuối:16 giờ trước</small></small>
                     </div>
                 </div>
             </div>
             
         </div>
     </div>
+
+    
+    <!-- load ảnh -->
+    <script>
+        let img = document.getElementById('img');
+        let input = document.getElementById('inputGroupFile01');
+        
+        input.onchange = (e) => {
+            if(input.files[0])
+            img.src = URL.createObjectURL(input.files[0]);
+        } 
+    </script>
 
     <script>
         var header = document.querySelector('header');

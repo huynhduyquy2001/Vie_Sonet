@@ -85,16 +85,17 @@
             </div>
         </nav>
     </header>
-    <div class="row" style="margin-top: 10px;  padding: 1%;">
-        <div class="col-lg-4 col-md-5 order-2 order-md-1"
-            style="border-right: 1px solid gray; background-color: white; position: relative;">
+    <div class="row" style="margin-top: 10px; position: relative;">
+        <div class="video-overlay">
+        </div>
+        <img src="images/nen.jpg" alt="" class="img-thumbnail"
+            style="max-height: 300px ; width: 100%; object-fit: cover; overflow: hidden; z-index: -10; ">
+        <div class="col-md-5 " style=" position: absolute; transform: translateY(-50%); top: 50%; left: 20px;">
             <div class="row">
                 <div class="col-4">
                     <img src="images/avt.jpg" width="100%" style="border-radius: 50%;" class="img-thumbnail" alt="">
-
                 </div>
-                <div class="col-8">
-                    <h2 style="color: #0D69B3;"><b>Giới thiệu</b></h2>
+                <div class="col-8" style="color: white;">
                     <h3>Duy Quý</h3>
                     <small>
                         <ul style="line-height: 30px;">
@@ -107,21 +108,17 @@
                     </small>
                 </div>
             </div>
-            <button style="border: 1px solid gray; border-radius: 6px; margin-bottom: 5px;"><small style=" white-space: nowrap;
+            <button style="border: 1px solid white; border-radius: 6px; margin-bottom: 5px; background-color: transparent; color: white;"><small style=" white-space: nowrap;
                         overflow: hidden; text-overflow: ellipsis;">
                     Đổi TT cá nhân</small></button>
-            <button style="border: 1px solid gray; border-radius: 6px; margin-bottom: 5px;"><small style=" white-space: nowrap;
+            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="border: 1px solid white; border-radius: 6px; margin-bottom: 5px; background-color: transparent; color: white;"><small style=" white-space: nowrap;
                         overflow: hidden; text-overflow: ellipsis;">
                     Đổi ảnh đại diện</small></button>
-            <button style="border: 1px solid gray; border-radius: 6px;"><small style=" white-space: nowrap;
+            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="border: 1px solid white; border-radius: 6px; background-color: transparent; color: white;"><small style=" white-space: nowrap;
                         overflow: hidden; text-overflow: ellipsis;">Đổi ảnh bìa</small></button>
         </div>
-        <div class="col-lg-8 col-md-7 order-1 order-md-2">
-            <img src="images/nen.jpg" alt="" class="img-thumbnail"
-                style="max-height: 300px ; width: 100%; object-fit: cover; overflow: hidden; ">
-        </div>
     </div>
-    <div class=" container">
+    <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div
@@ -134,48 +131,49 @@
                             <div class="add-post-links">
 
                                 <!-- Modal trigger button -->
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalId">
+                                <button type="button" class="btn" data-bs-toggle="modal" href="#exampleModalToggle">
                                     <a href="#"><img src="images/photo.png" style="width: 20px;
                                             margin-right: 13px;" alt="">Photo/Video</a>
                                 </button>
- 
-                                <!-- Modal Body -->
-                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                                <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                                        role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Body
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save</button>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                               <!-- Modal -->
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel"><b style="margin-left: 170px;">Đăng bài viết</b></h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-
-
-                                <!-- Optional: Place to the bottom of scripts -->
-                                <script>
-                                    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-
-                                </script>
+                                <div class="modal-body">
+                                    <div class="user-profile">
+                                        <img src="images/avt.jpg">
+                                        <div>
+                                            <p> Alex Carry</p>
+                                            <small>Public <i class="fas fa-caret-down"></i></small>
+                                        </div>
+                                    </div> <br>
+                                    <textarea  name="" placeholder="Bạn muốn đăng gì?" id="" cols="30" rows="3"></textarea><br>
+                                    <center><img id="img" src="" width="45%" style="border-radius: 10px;"></center>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="inputGroupFile01"><img src="images/photo.png" style="width: 20px;
+                                            margin-right: 13px;">Photo/Video</label>
+                                        <input type="file" class="form-control" id="inputGroupFile01">
+                                      </div>
+                                      
+                                  <button style="width: 500px;" class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Đăng bài</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
 
                     </div>
-                    Lời mời kết bạn(12) &nbsp; <small><small style="color: #F27323;">Xem tất cả>></small></small>
                     <hr>
+                    Lời mời kết bạn(12) &nbsp; <small><small style="color: #F27323;">Xem tất cả>></small></small>
+                    
                     <div style="margin-bottom: 20px;">
                         <div class="user-profile">
                             <img src="images/avt.jpg" alt="">
@@ -247,98 +245,88 @@
             </div>
         </div>
     </div>
-    <!-- <div style="background-color: white; box-shadow: 0 2px 4px rgb(0 0 0 / 10%);">
-        <div class="container" style="width: 70%;background: white; position: relative; border-radius: 6px; padding: 0; ">
-            <img src="images/background.jpg" alt=""
-                style="max-height: 300px ; width: 100%; object-fit: cover; overflow: hidden; border-radius: 0 0 6px 6px; ">
-            <img src="images/avt.jpg" class="img-thumbnail" alt=""
-                style="width: 18%; position: absolute; bottom: 0; right: 50%;transform: translateX(50%); border-radius: 50%; z-index: 100;">
-        </div>
-        <div class="container" style="width: 70%; position: relative; margin-top: 15px; ">
-            <center>
-                <h4>Duy Quý</h4>
-                <small>
-                    <div >
-                        Thuyền ai đậu bến sông trăng đó
-                        <br>
-                        Có chở trăng về kịp tối nay
-                    </div>
-                </small>
-                <hr width="30px" style="color: transparent;">
-            </center>
-
-            
-
-        </div>
-    </div>
-    <div class=" container" style="width: 70%;">
-        <div class="row">
-            <div class="col-md-4">
-                <div style="background-color: white; border-radius: 6px; box-sizing: border-box; margin: 1%; padding: 3%;box-shadow: 0 1px 2px rgb(0 0 0 / 10%); margin-top: 10px;">
-                    <b>Giới thiệu</b>
-                    <small>
-                        <ul style="line-height: 30px;">
-                            <li><b><i class="fa-light fa-mountain-sun"></i> Quê quán:</b> Đồng Tháp</li>
-                            <li><i class="fa-regular fa-heart"></i> Độc thân</li>
-                            <li><b><i class="fa-regular fa-envelope"></i> Email</b>:quyhdpc04119@fpt.edu.vn</li>
-                            <li></li>
-                        </ul>
-                    </small>
-                </div>
-            </div>
-            <div class="col-md-8" >
-                <div style="background-color: white; border-radius: 6px; box-sizing: border-box; margin: 1%; padding: 3%;box-shadow: 0 1px 2px rgb(0 0 0 / 10%); margin-top: 10px;">
-                    <div class="write-post-container nenTrangChu" style="padding-top: 0; margin-top: 0;">
-                        <div class="post-upload-textarea"  style="padding-top: 0; margin-top: 0;">
-                            <textarea  name="" placeholder="Hãy viết gì đó cho ngày hôm nay" id="" cols="30" rows="3"></textarea>
-                            <div class="add-post-links">
-                                <a href="#"><img src="images/photo.png" style="width: 20px;
-                                    margin-right: 13px;" alt="">Photo/Video</a>
-                                <button type="button" style="background: #1FB34A; border: none; position: absolute; right: 0;"
-                                    class="btn btn-primary">Đăng</button>
-                            </div>
-                        </div>
-        
-                    </div>
-                    <b>Bài viết</b>
-                    <hr>
-                    <div class="write-post-container nenTrangChu" style="margin-bottom: 20px;">
-                        <div style=" display: flex; align-items: center; justify-content: space-between;">
-                            <div class="user-profile">
-                                <img src="images/avt.jpg" alt="">
-                                <div>
-                                    <p> Alex Carry</p>
-                                    <small>August 13 1999, 09.18 pm</small>
-                                </div>
-                            </div>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> &nbsp;&nbsp;
+            <a class="navbar-brand" href="#"
+                    style="color: #F27323;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;">VIE_SONET</a>
+            <div class="row">
+                <div class="col-4 post-upload-textarea">
+                    <div style=" display: flex; align-items: center; justify-content: space-between;">
+                        <div class="user-profile">
+                            <img src="images/avt.jpg" alt="">
                             <div>
-                                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                            </div>
-    
-                        </div>
-                        <div style="margin-top: 10px;">
-                            Hôm nay gất là dui đó nghen, hãy like cho tui 1 phát lào mấy a zai
-                            <center>
-                                <img src="images/nenDangNhap2.jpeg" width="100%" alt=""
-                                    style="margin-top: 10px;margin-bottom: 10px; border-radius: 6px;">
-                            </center>
-                            <div class="post-reaction">
-                                <div class="activity-icons">
-                                    <div><img src="images/like-blue.png" alt="">120</div>
-                                    <div><img src="images/comments.png" alt="">52</div>
-                                    <div><img src="images/share.png" alt="">35</div>
-                                </div>
-                                <div class="post-profile-picture">
-                                    <img src="images/profile-pic.png " alt=""> <i class=" fas fa-caret-down"></i>
-                                </div>
+                                <p> Huỳnh Duy Vỹ</p>
+                                <small>August 13 1999, 09.18 pm</small>
                             </div>
                         </div>
-    
+                        <div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                    </div><br>
+                    <textarea name="" id="" cols="30" rows="4" placeholder="">Thấy tui có đẹp trai chưa nè?</textarea>
+                    <div class="post-reaction" style="margin-bottom: 5px;">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png" alt="">120</div>
+                            <div><img src="images/comments.png" alt="">52</div>
+                            <div><img src="images/share.png" alt="">35</div>
+                        </div>
                     </div>
+                    <div style="overflow-y: hidden;overflow-y: scroll; height: 54vh;">
+                        <div class="user-profile">
+                            <img src="images/avt.jpg" style="width: 35px;">
+                            <div style="margin-top: 40px; border: 1px solid grey; width: 400px; height: 80px; border-radius: 10px;">
+                                &nbsp; <b>Lý Hiếu</b>
+                                <textarea name="" id="" cols="50" rows="2" placeholder="" style="padding-left: 10px;">Mới cắt tóc à. Sao không rủ t đi?</textarea>
+                            </div>
+                        </div>
+                        <div class="user-profile">
+                            <img src="images/avt.jpg" style="width: 35px;">
+                            <div style="margin-top: 40px; border: 1px solid grey; width: 400px; height: 80px; border-radius: 10px;">
+                                &nbsp; <b>Lê Trung</b>
+                                <textarea name="" id="" cols="50" rows="2" placeholder="Mới đi cắt tóc à" style="padding-left: 10px;">T đẹp hơn m đây này</textarea>
+                            </div>
+                        </div>
+                        <div class="user-profile">
+                            <img src="images/avt.jpg" style="width: 35px;">
+                            <div style="margin-top: 40px; border: 1px solid grey; width: 400px; height: 80px; border-radius: 10px;">
+                                &nbsp; <b>Minh Quý</b>
+                                <textarea name="" id="" cols="50" rows="2" placeholder="" style="padding-left: 10px;">A trai chụp ảnh photoshop quá đi:))</textarea>
+                            </div>
+                        </div>
+                        <div class="user-profile">
+                            <img src="images/avt.jpg" style="width: 35px;">
+                            <div style="margin-top: 40px; border: 1px solid grey; width: 400px; height: 80px; border-radius: 10px;">
+                                &nbsp; <b>Lê Trung Hiếu</b>
+                                <textarea name="" id="" cols="50" rows="2" placeholder="Mới đi cắt tóc à" style="padding-left: 10px;">Xin info cái máy ảnh</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 text-center" style="padding-top: 50px;">
+                    <img src="images/avt.jpg" width="55%" alt="">
                 </div>
             </div>
         </div>
-    </div> -->
+      </div>
+    </div>
+  </div>
+
+    <!-- load ảnh -->
+    <script>
+        let img = document.getElementById('img');
+        let input = document.getElementById('inputGroupFile01');
+        
+        input.onchange = (e) => {
+            if(input.files[0])
+            img.src = URL.createObjectURL(input.files[0]);
+        } 
+    </script>
+
     <script>
         var header = document.querySelector('header');
         var lastScrollTop = 0;
