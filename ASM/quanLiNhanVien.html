@@ -177,12 +177,13 @@
                                 <div class="col-12">
                                     <div class="row">
                                         <div class="col-2 mt-3">
-                                            <img id="img" src="images/avt.jpg" width="85%"  style="border-radius: 10px;">
+                                            <img id="img" src="images/avt.jpg" width="85%" style="border-radius: 10px;">
                                         </div>
                                         <div class="col-8 mt-5">
                                             <div class="input-group mb-3">
                                                 <label class="me-3 my-2">Hình ảnh:</label>
-                                                <input id="input" type="file" class="form-control" id="inputGroupFile01">
+                                                <input id="input" type="file" class="form-control"
+                                                    id="inputGroupFile01">
                                             </div>
                                         </div>
                                     </div>
@@ -196,7 +197,7 @@
                                         <label class="form-check-label" for="gridRadios1">
                                             Nhân viên
                                         </label>
-                                        &nbsp; 
+                                        &nbsp;
                                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
                                             value="option2">
                                         <label class="form-check-label" for="gridRadios2">
@@ -207,7 +208,7 @@
                                 <div class="col-3 mt-3">
                                     <div class="input-group">
                                         <label class="me-1 my-1">Giới tính:</label>
-                                        <select class="form-select form-select-sm" >
+                                        <select class="form-select form-select-sm">
                                             <option selected value="1">Nam</option>
                                             <option value="2">Nữ</option>
                                             <option value="3">Khác</option>
@@ -225,9 +226,12 @@
                                     </div>
                                 </div>
                                 <div class="col-6 mt-5">
-                                    <button type="button" class="btn btn-success btn-sm me-3" style="width: 80px;">Thêm</button>
-                                    <button type="button" class="btn btn-primary btn-sm me-3" style="width: 80px;">Cập nhập</button>
-                                    <button type="button" class="btn btn-info btn-sm" style="width: 80px;">Làm mới</button>
+                                    <button type="button" class="btn btn-success btn-sm me-3"
+                                        style="width: 80px;">Thêm</button>
+                                    <button type="button" class="btn btn-primary btn-sm me-3" style="width: 80px;">Cập
+                                        nhập</button>
+                                    <button type="button" class="btn btn-info btn-sm" style="width: 80px;">Làm
+                                        mới</button>
                                 </div>
                             </div>
                         </div>
@@ -243,15 +247,16 @@
                                         <th scope="col">Giới tính</th>
                                         <th scope="col">SDT</th>
                                         <th scope="col">Email</th>
-                                        <th scope="col">Trạng  thái</th>
+                                        <th scope="col">Trạng thái</th>
                                         <th>Tác vụ</th>
 
-                                        
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="">
-                                        <td scope="row"><img class="img-thumbnail" style="border-radius: 16px;" src="images/avt.jpg" width="50%" alt=""></td>
+                                        <td scope="row"><img class="img-thumbnail" style="border-radius: 16px;"
+                                                src="images/avt.jpg" width="50%" alt=""></td>
                                         <td style="white-space: nowrap;
                                         overflow: hidden;
                                         text-overflow: ellipsis;
@@ -271,7 +276,8 @@
                                             <small>Hoạt động</small>
                                         </td>
                                         <td>
-                                            <a data-bs-toggle="modal" data-bs-target="#exampleModalToggle" href="index.html"
+                                            <a data-bs-toggle="modal" data-bs-target="#exampleModalToggle"
+                                                href="index.html"
                                                 style="background-color: rgba(234,229,224,1); color: #413026; border: 1px solid #5A4F48;"
                                                 class="btn btn-info btn-sm info-button">
                                                 <i class="fa-regular fa-trash-can"></i>
@@ -291,10 +297,10 @@
     <script>
         let img = document.getElementById('img');
         let input = document.getElementById('input');
-        
+
         input.onchange = (e) => {
-            if(input.files[0])
-            img.src = URL.createObjectURL(input.files[0]);
+            if (input.files[0])
+                img.src = URL.createObjectURL(input.files[0]);
         } 
     </script>
 
