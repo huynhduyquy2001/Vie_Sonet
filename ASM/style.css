@@ -1,7 +1,10 @@
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #F0F2F5;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(246, 245, 244, 1);
     transition: 0.5s;
+    color: rgba(37, 38, 38, 1);
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
 }
 
 header {
@@ -13,10 +16,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: rgba(235, 233, 231, 1);
     z-index: 10;
     margin-left: 0;
     margin-top: 0;
+    color: rgba(90, 79, 72, 1);
+    font-family: 'Nord Book';
 }
 
 @keyframes showtop {
@@ -253,6 +258,31 @@ header {
 
 }
 
+@media screen and (max-width: 768px) {
+
+    .menuLeft {
+        display: none;
+    }
+
+    .menuRight {
+        display: block;
+    }
+
+    .card-header h5 {
+        font-size: 15px;
+    }
+    
+
+}
+
+@media screen and (min-width: 769px) {
+
+    .menuRight {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 601px) {
     .menuTabs {
         display: none
@@ -305,7 +335,6 @@ header {
 .input-hbh {
     height: 40px;
     border: 1px solid #8D8D8D;
-    transform: skewX(-20deg);
     transition: 0.5s;
 }
 
@@ -328,9 +357,17 @@ header.hidden {
 }
 
 a:hover {
-    color: black;
+    color: #A89386;
 }
 
+a {
+    transition: 0.2s;
+}
+
+option {
+    background-color: transparent;
+    background: none;
+}
 
 
 
@@ -393,7 +430,7 @@ ul {
 }
 
 .accordion-button:not(.collapsed) {
-    color: #A59565;
+    color: #A89386;
     background-color: white;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
 }
@@ -406,11 +443,40 @@ ul {
 }
 
 .nav-link {
-    color: #A59565;
+    color: #A89386;
+}
+.nav-link:focus {
+    color: #5A4F48;
+}
+
+th {
+    color: #5A4F48;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #5A4F48;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    font-weight: bolder;
+}
+
+.nav-item:hover {
+    transform: translateY(-1px);
+}
+
+.nav-item {
+    transition: 0.5s;
 }
 
 .nav-link:hover {
-    color: #8D8D8D;
+    color: #F27323;
+    background-color: #F0F2F5;
+    border-bottom: 1px solid #F27323;
+}
+
+.nav-link {
+    transition: 0.3s ease-in-out;
 }
 
 .table-primary {
@@ -512,10 +578,12 @@ body {
 .scroll-to-top i {
     font-size: 24px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
+
 .user-profile {
     display: flex;
     align-items: center;
@@ -535,6 +603,7 @@ a{
 .user-profile small {
     font-size: 12px;
 }
+
 .post-upload-textarea {
     padding: 20px 0px 0px 55px;
 }
@@ -547,6 +616,7 @@ a{
     background: transparent;
     resize: none;
 }
+
 .write-post-container {
     color: #626262;
     background-color: var(--bg-color);
@@ -554,12 +624,14 @@ a{
     padding: 20px;
     border-radius: 6px;
 }
+
 .post-reaction {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
+
 .activity-icons div {
     display: inline-flex;
     align-items: center;
@@ -570,15 +642,18 @@ a{
     width: 18px;
     margin-right: 10px;
 }
+
 .navbar-expand-sm .navbar-nav .dropdown-menu {
     position: absolute;
     left: -250px;
 }
+
 .profile-darkButton {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 /* The switch - the box around the slider */
 .nut {
     width: 51px;
@@ -603,6 +678,7 @@ a{
     cursor: pointer;
     transition: all 0.2s ease-out;
 }
+
 .checkbox:checked+.switch {
     background-color: #34C759;
 }
@@ -611,6 +687,7 @@ a{
     left: calc(50% - 27px/2);
     top: calc(100% - 27px/2);
 }
+
 /* The slider */
 .slider {
     width: 12px;
@@ -624,34 +701,114 @@ a{
     transition: all 0.2s ease-out;
     cursor: pointer;
 }
+
 .dark-mode {
     background-color: #18191A;
     color: white;
     z-index: 20;
 }
+
 .dark-mode2 {
     background-color: #242526;
     color: white;
     z-index: 20;
 }
-.input-hbh:focus{
+
+.input-hbh:focus {
     background-color: transparent;
     box-shadow: none;
 }
-.dropdown-item:focus, .dropdown-item:hover {
-    color: #1e2125;
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    border: 1px solid #413026;
     background-color: transparent;
+    transform: translateX(-3px);
 }
-.nenTrangChu{
-    border-radius: 6px; 
+
+.dropdown-item {
+    transition: 0.5s;
+}
+
+.nenTrangChu {
+    border-radius: 6px;
     background-color: white;
 }
-.tinTuc2:hover{
+
+.tinTuc2 {
+    overflow-y: hidden;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-right: 3px;
+}
+
+.tinTuc2:hover {
     overflow-y: scroll;
 }
-.tinTuc2{
-    overflow-y: hidden;  
-    height: 100vh;  
-    padding: 2%;
+
+.btn01 {
+    background-color: #3B998B;
+    color: white;
+    border: none;
+}
+
+.nhan {
+    color: #5A4F48;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 0.1em;
+}
+
+.anNoiDung {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-header {
+    border-color: rgba(90, 79, 72, 1);
+    border-width: 0px;
+    background-color: rgba(234, 229, 224, 1);
+    background-image: linear-gradient(90deg,
+            #A89386 0%,
+            rgba(234, 229, 224, 1) 55%,
+            #A89386 100%);
+    border-style: solid;
+    border-radius: inherit;
+
+}
+
+.card-header h5 {
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-family: 'Sweet Sans Pro Medium';
+    font-weight: 400;
+    font-style: normal;
+    transition-duration: 0.5s;
+    transition-property: color;
+}
+
+.card {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateX(-10px);
+}
+
+.card-body {
+    color: rgba(37, 38, 38, 1);
+    text-transform: lowercase;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nenTrang {
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }

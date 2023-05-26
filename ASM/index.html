@@ -13,18 +13,30 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f737751420.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bangers&family=Chakra+Petch:ital,wght@0,400;1,300;1,400;1,700&family=Grenze&family=Patrick+Hand&family=Playfair+Display+SC&family=Road+Rage&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bangers&family=Chakra+Petch:ital,wght@0,400;1,300;1,400;1,700&family=Grenze&family=Patrick+Hand&family=Roboto&display=swap"
+        rel="stylesheet">
+
     <title>Trang chủ</title>
 </head>
 
 <body>
-
-
+    <img src="images/cayTre.png" style="position: fixed; right: 0; max-height: 90vh; z-index: -2;" alt="">
+    <!-- style="box-shadow: 0 1px 2px rgb(0 0 0 / 10%);" -->
     <header class="header">
-        <nav class="navbar navbar-expand-sm navbar-light" style="border: none;">
+        <nav class="navbar navbar-expand-sm navbar-light" style="border: none;padding-top: 0; padding-bottom: 0;">
             <div class="container">
-                <a class="navbar-brand" href="#"
-                    style="color: #F27323;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;">VIE_SONET</a>
+                <a class="navbar-brand nhan" href="#" style="color: #5A4F48; font-weight: bolder; font-family: 'robo';">
+                    <img src="images/chimLac.png" height="30px" alt=""> VIE_SONET</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -33,17 +45,28 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Trang chủ <span
-                                    class="visually-hidden">(current)</span></a>
+                            <a class="nav-link active" href="#" aria-current="page" style=" white-space: nowrap;
+                            overflow: hidden; 
+                            text-overflow: ellipsis;font-family: 'Roboto', sans-serif;letter-spacing: 0.1em;">Trang chủ
+                                <span class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><small>Tin tức</small></a>
+                            <a class="nav-link" href="#"><small style=" white-space: nowrap;
+                                overflow: hidden; 
+                                text-overflow: ellipsis;font-family: 'Roboto', sans-serif;letter-spacing: 0.1em; ">Điều
+                                    khoản</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><small style=" white-space: nowrap;
+                                overflow: hidden; 
+                                text-overflow: ellipsis;font-family: 'Roboto', sans-serif;letter-spacing: 0.1em; ">Quản
+                                    lí</small></a>
                         </li>
                     </ul>
                     <form class="d-flex my-2 my-lg-0">
                         <input class="form-control me-sm-2 input-hbh"
-                            style="border-radius: 0; border: none; border-bottom: 1px solid gray;" type="text"
-                            placeholder="Search">
+                            style="border-radius: 0; border: none; border-bottom: 1px solid gray; transform: skew(0); background-color: transparent;"
+                            type="text" placeholder="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" hidden type="submit">Search</button>
                     </form>
 
@@ -84,269 +107,232 @@
             </div>
         </nav>
     </header>
+
     <div class="container" id="container" style="transition: 0.5s;margin-top: 70px;">
         <div class="row">
-            <div class="col-md-3 " id="tinTuc"
-                style="position: sticky;align-self: flex-start; top: 70px;transition: 0.5s;">
-                <div class="nenTrangChu tinTuc2" >
-                    <a href=""><b>Tin hot</b> <span><small> &nbsp; <small style="color: #F27323;">Xem tất cả>></small></small></span></a>
+            <div class="col-md-6 ">
+                <div class="menuRight">
+                    <div><b class="nhan">ĐĂNG BÀI</b></div>
                     <div>
-                        <a href="">
-                            <small>Trung Quốc nói sẽ 'không khoanh tay đứng nhìn' xung đột Ukraine</small>
-                            <img src="images/tq.jpg" alt="" width="90%">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <small>Động lực thúc đẩy Liên đoàn Arab tái kết nạp Syria</small>
-                            <img src="images/arvssy.png" alt="" width="90%">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="write-post-container nenTrangChu">
-                    <div class="user-profile">
-                        <img src="images/avt.jpg" alt="">
-                        <div>
-                            <p> Alex Carry</p>
-                            <small>Public <i class="fas fa-caret-down"></i></small>
+                        <div class="write-post-container nenTrangChu img-thumbnail"
+                            style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);">
+                            <div class="user-profile">
+                                <img src="images/avt.jpg" alt="">
+                                <div>
+                                    <p style="color: #A59565;">Huỳnh Duy Quý</p>
+                                    <small>
+                                        Công khai <i class="fas fa-caret-down"></i>
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="post-upload-textarea">
+                                <textarea data-bs-toggle="modal" href="#exampleModalToggle" name=""
+                                    placeholder="Bạn muốn đăng gì?" id="" cols="30" rows="1"></textarea>
+                                <div class="add-post-links">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalId">
+                                        <a href="#"><i class="fa-regular fa-image"></i> Photo/Video</a>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Lời mời kết bạn</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        4
+                                        <br>
+                                        <h6> <small>Xem tất cả>></small></h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Danh sách bạn bè</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        532
+                                        <br>
+                                        <h6> <small>Xem tất cả>></small></h6>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="post-upload-textarea">
-                        <textarea name="" placeholder="Bạn muốn đăng gì?" id="" cols="30" rows="3"></textarea>
-                        <div class="add-post-links">
-                            <a href="#"><img src="images/photo.png" style="width: 20px;
-                                margin-right: 13px;" alt="">Photo/Video</a>
-                        </div>
-                    </div>
-
                 </div>
-                <b>BẢNG TIN</b>
-                <hr width="20%">
-                <div class="write-post-container nenTrangChu" style="margin-bottom: 20px;">
-                    <div style=" display: flex; align-items: center; justify-content: space-between;">
+                <div><b class="nhan">BẢNG TIN</b></div>
+
+                <div class="write-post-container nenTrangChu img-thumbnail"
+                    style="margin-bottom: 20px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);">
+                    <div style=" display: flex; align-items: center; justify-content: space-between; ">
                         <div class="user-profile">
-                            <img src="images/avt.jpg" alt="">
+                            <img src="images/avt.jpg" class="img-thumbnail" alt="">
                             <div>
-                                <p> Alex Carry</p>
-                                <small>August 13 1999, 09.18 pm</small>
+                                <p style="color: #A59565;"> Trần Văn Minh Híu</p>
+                                <small>30-4-1975_09:18 pm</small>
                             </div>
                         </div>
                         <div>
-                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                            <div class="btn-group">
+                                <span class="btn dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+
+                                </span>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Báo cáo vi phạm</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div style="margin-top: 10px;">
                         Hôm nay gất là dui đó nghen, hãy like cho tui 1 phát lào mấy a zai
                         <center>
-                            <img src="images/nenDangNhap2.jpeg" width="100%" alt=""
+                            <img src="images/nenDangNhap2.jpeg" class="img-thumbnail" width="100%" alt=""
                                 style="margin-top: 10px;margin-bottom: 10px; border-radius: 6px;">
                         </center>
                         <div class="post-reaction">
                             <div class="activity-icons">
-                                <div><img src="images/like-blue.png" alt="">120</div>
-                                <div><img src="images/comments.png" alt="">52</div>
-                                <div><img src="images/share.png" alt="">35</div>
+                                <div><i class="fa-regular fa-thumbs-up"></i> &nbsp; 120</div>
+                                <div><i class="fa-regular fa-comment"></i>&nbsp; 52</div>
                             </div>
-                            <div class="post-profile-picture">
-                                <img src="images/profile-pic.png " alt=""> <i class=" fas fa-caret-down"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="write-post-container nenTrangChu" style="margin-bottom: 20px;">
-                    <div style=" display: flex; align-items: center; justify-content: space-between;">
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" alt="">
-                            <div>
-                                <p> Alex Carry</p>
-                                <small>August 13 1999, 09.18 pm</small>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                        </div>
-
-                    </div>
-                    <div style="margin-top: 10px;">
-                        Hôm nay gất là dui đó nghen, hãy like cho tui 1 phát lào mấy a zai
-                        <center>
-                            <img src="images/nenDangNhap2.jpeg" width="100%" alt=""
-                                style="margin-top: 10px;margin-bottom: 10px; border-radius: 6px;">
-                        </center>
-                    </div>
-                    <div class="post-reaction">
-                        <div class="activity-icons">
-                            <div><img src="images/like-blue.png" alt="">120</div>
-                            <div><img src="images/comments.png" alt="">52</div>
-                            <div><img src="images/share.png" alt="">35</div>
-                        </div>
-                        <div class="post-profile-picture">
-                            <img src="images/profile-pic.png " alt=""> <i class=" fas fa-caret-down"></i>
                         </div>
                     </div>
                 </div>
-                <div class="write-post-container nenTrangChu" style="margin-bottom: 20px;">
-                    <div style=" display: flex; align-items: center; justify-content: space-between;">
+               
+            </div>
+            <div class="col-md-5 menuLeft" style="position: fixed; top: 70px; right: 5%; opacity: 0.8;">
+                <div><b class="nhan">ĐĂNG BÀI</b></div>
+                <div>
+                    <div class="write-post-container nenTrangChu img-thumbnail"
+                        style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);">
                         <div class="user-profile">
                             <img src="images/avt.jpg" alt="">
                             <div>
-                                <p> Alex Carry</p>
-                                <small>August 13 1999, 09.18 pm</small>
+                                <p style="color: #A59565;">Huỳnh Duy Quý</p>
+                                <small>
+                                    Công khai <i class="fas fa-caret-down"></i>
+                                </small>
                             </div>
                         </div>
-                        <div>
-                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+                        <div class="post-upload-textarea">
+                            <textarea data-bs-toggle="modal" href="#exampleModalToggle" name=""
+                                placeholder="Bạn muốn đăng gì?" id="" cols="30" rows="1"></textarea>
+                            <div class="add-post-links">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalId">
+                                    <a href="#"><i class="fa-regular fa-image"></i> Photo/Video</a>
+                                </button>
+                            </div>
+
+
                         </div>
 
                     </div>
-                    <div style="margin-top: 10px;">
-                        Hôm nay gất là dui đó nghen, hãy like cho tui 1 phát lào mấy a zai
-                        <center>
-                            <img src="images/nenDangNhap2.jpeg" width="100%" alt=""
-                                style="margin-top: 10px;margin-bottom: 10px; border-radius: 6px;">
-                        </center>
-                    </div>
-                    <div class="post-reaction">
-                        <div class="activity-icons">
-                            <div><img src="images/like-blue.png" alt="">120</div>
-                            <div><img src="images/comments.png" alt="">52</div>
-                            <div><img src="images/share.png" alt="">35</div>
-                        </div>
-                        <div class="post-profile-picture">
-                            <img src="images/profile-pic.png " alt=""> <i class=" fas fa-caret-down"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="write-post-container nenTrangChu" style="margin-bottom: 20px;">
-                    <div style=" display: flex; align-items: center; justify-content: space-between;">
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" alt="">
-                            <div>
-                                <p> Alex Carry</p>
-                                <small>August 13 1999, 09.18 pm</small>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Lời mời kết bạn</h5>
+                                </div>
+                                <div class="card-body">
+                                    4
+                                    <br>
+                                    <h6> <small>Xem tất cả>></small></h6>
+                                </div>
+
                             </div>
                         </div>
-                        <div>
-                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Danh sách bạn bè</h5>
+                                </div>
+                                <div class="card-body">
+                                    532
+                                    <br>
+                                    <h6> <small>Xem tất cả>></small></h6>
+                                </div>
 
-                    </div>
-                    <div style="margin-top: 10px;">
-                        Hôm nay gất là dui đó nghen, hãy like cho tui 1 phát lào mấy a zai
-                        <center>
-                            <img src="images/nenDangNhap2.jpeg" width="100%" alt=""
-                                style="margin-top: 10px;margin-bottom: 10px; border-radius: 6px;">
-                        </center>
-                    </div>
-                    <div class="post-reaction">
-                        <div class="activity-icons">
-                            <div><img src="images/like-blue.png" alt="">120</div>
-                            <div><img src="images/comments.png" alt="">52</div>
-                            <div><img src="images/share.png" alt="">35</div>
-                        </div>
-                        <div class="post-profile-picture">
-                            <img src="images/profile-pic.png " alt=""> <i class=" fas fa-caret-down"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="write-post-container nenTrangChu" style="margin-bottom: 20px;">
-                    <div style=" display: flex; align-items: center; justify-content: space-between;">
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" alt="">
-                            <div>
-                                <p> Alex Carry</p>
-                                <small>August 13 1999, 09.18 pm</small>
                             </div>
-                        </div>
-                        <div>
-                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
-                        </div>
-
-                    </div>
-                    <div style="margin-top: 10px;">
-                        Hôm nay gất là dui đó nghen, hãy like cho tui 1 phát lào mấy a zai
-                        <center>
-                            <img src="images/nenDangNhap2.jpeg" width="100%" alt=""
-                                style="margin-top: 10px;margin-bottom: 10px; border-radius: 6px;">
-                        </center>
-                    </div>
-                    <div class="post-reaction">
-                        <div class="activity-icons">
-                            <div><img src="images/like-blue.png" alt="">120</div>
-                            <div><img src="images/comments.png" alt="">52</div>
-                            <div><img src="images/share.png" alt="">35</div>
-                        </div>
-                        <div class="post-profile-picture">
-                            <img src="images/profile-pic.png " alt=""> <i class=" fas fa-caret-down"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 nenTrangChu" id="danhSachBanBe" style="position: sticky;align-self: flex-start;top: 70px; overflow-y: hidden; overflow-y: scroll; height: 100vh; transition: 0.5s;">
-                <b>Lời mời kết bạn(5)</b>
-                    <hr width="20%">
-                    <div style="margin-bottom: 20px;">
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" alt="">
-                            <div>
-                                <p> Alex Carry</p>
-                                <button name="" id="" class="btn" href="#" role="button"
-                                    style="background-color: #0D69B3; padding: 1px; color: white;height: 20px; line-height: 0; padding-top: 0;"><small>Xác
-                                        nhận</small></button>
-                                <button name="" id="" class="btn" href="#" role="button"
-                                    style="background-color: #F3F3F3; padding: 2px; line-height: 0; padding-top: 0;"><small>Xóa</small></button>
-                            </div>
-                        </div>
-                    </div>
-                <b>Danh sách bạn bè</b>
-                <div class="user-profile" style="margin-bottom: 10px;">
-                    <img src="images/avt.jpg" style="width: 35px;" alt="">
-                    <div>
-                        <p><b><small>Alex Carry</small></b></p>
-                        <small><small>Hoạt động lần cuối:16 giờ trước</small></small>
-                    </div>
-                </div>
-                <div class="user-profile" style="margin-bottom: 10px;">
-                    <img src="images/avt.jpg" style="width: 35px;" alt="">
-                    <div>
-                        <p> Alex Carry</p>
-                        <small>Hoạt động lần cuối:16 giờ trước</small>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: rgba(246,245,244,1);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel"><b style="margin-left: 170px;">Đăng bài
+                            viết</b></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="user-profile">
+                        <img src="images/avt.jpg" alt="">
+                        <div>
+                            <p> Alex Carry</p>
+                            <small>
+                                <div>
+                                    <select style="border: none; background-color: transparent;">
+                                        <option selected>Công khai</option>
+                                        <option value="">Bạn bè</option>
+                                        <option value="">Chỉ mình tôi</option>
+                                    </select>
+                                </div>
+                            </small>
+                        </div>
+                    </div> <br>
+                    <textarea name="" placeholder="Bạn muốn đăng gì?" id="" cols="30" rows="3" style="    width: 100%;
+                 border: 0px;
+                 outline: none;
+                 border-bottom: 1px solid #ccc;
+                 background: transparent;
+                 resize: none;"></textarea><br>
+                    <center>
+                        <img id="img" src="" width="45%"
+                            style="border-radius: 10px; border: 1px solid rgb(184, 182, 182)">
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile01">
+                            <i class="fa-regular fa-image"></i>Photo/Video</label>
+                        <input type="file" class="form-control" id="inputGroupFile01">
+                    </div>
 
+                    <button style="width: 500px;background-color: #5A4F48; border: none;" class="btn btn-primary"
+                        data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Đăng
+                        bài</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- load ảnh -->
     <script>
-        var header = document.querySelector('header');
-        var lastScrollTop = 0;
-        window.addEventListener('scroll', function () {
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (lastScrollTop == 0) {
-                document.getElementById("container").style.marginTop = "70px";
-            }
-            if (scrollTop > lastScrollTop) {
-                header.classList.add('hidden');
-                document.getElementById("container").style.marginTop = "10px";
-                document.getElementById("tinTuc").style.top = "10px";
-                document.getElementById("danhSachBanBe").style.top = "10px";
-                
-            } else if (scrollTop < lastScrollTop) {
-                header.classList.remove('hidden');
-                document.getElementById("container").style.marginTop = "70px";
-                document.getElementById("tinTuc").style.top = "70px";
-                document.getElementById("danhSachBanBe").style.top = "70px";
-            }
-            lastScrollTop = scrollTop;
-        });
-
-
+        let img = document.getElementById('img');
+        let input = document.getElementById('inputGroupFile01');
+        input.onchange = (e) => {
+            if (input.files[0])
+                img.src = URL.createObjectURL(input.files[0]);
+        } 
     </script>
+    <script src="main.js"></script>
+
     <script>
         function toggleDarkMode() {
             var body = document.body;
