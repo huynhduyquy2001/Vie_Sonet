@@ -1,10 +1,14 @@
 body {
     font-family: "Poppins", sans-serif;
-    background-color: rgba(246, 245, 244, 1);
+    background-color: #f8f8f8;
     transition: 0.5s;
     color: rgba(37, 38, 38, 1);
+    color: #a0a5a8;
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } */
+}
+.modal-content{
+    background-color: rgba(246, 245, 244, 1);
 }
 
 header {
@@ -16,14 +20,17 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(235, 233, 231, 1);
+    background-color: #e9e9e9;
     z-index: 10;
     margin-left: 0;
     margin-top: 0;
     color: rgba(90, 79, 72, 1);
     font-family: 'Nord Book';
 }
-
+label{
+    color: #5A4F48;
+    font-weight: bolder;
+}
 @keyframes showtop {
     from {
         opacity: 0;
@@ -473,6 +480,7 @@ th {
     color: #F27323;
     background-color: #F0F2F5;
     border-bottom: 1px solid #F27323;
+    transform: translateX(-5px);
 }
 
 .nav-link {
@@ -753,11 +761,14 @@ a {
     color: white;
     border: none;
 }
+img:hover{
+    cursor: pointer;
+}
 
 .nhan {
-    color: #5A4F48;
+    color: #222;
     font-family: 'Playfair Display SC', serif;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 }
 
 .anNoiDung {
@@ -779,7 +790,7 @@ a {
 
 }
 
-.card-header h5 {
+.card-header h6 {
     letter-spacing: 0.05em;
     text-align: center;
     font-family: 'Sweet Sans Pro Medium';
@@ -808,9 +819,14 @@ a {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     font-style: normal;
+    
 }
 
 .nenTrang {
     background-color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.btnXacNhan{
+    background-color: #2779a7;
+    color: white;
 }
