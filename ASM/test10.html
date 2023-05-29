@@ -93,7 +93,14 @@
         <div class="col-md-5 " style=" position: absolute; transform: translateY(-50%); top: 50%; left: 20px;">
             <div class="row">
                 <div class="col-4">
-                    <img src="images/avt.jpg" width="100%" style="border-radius: 50%;" class="img-thumbnail" alt="">
+                    <div class="btn-group dropend">
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/avt.jpg"
+                                width="100%" style="border-radius: 50%;" class="img-thumbnail" alt=""></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Xem ảnh đại diện</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-8" style="color: white;">
                     <h3>Duy Quý</h3>
@@ -113,12 +120,12 @@
                     style=" white-space: nowrap;
                         overflow: hidden; text-overflow: ellipsis;">
                     Đổi TT cá nhân</small></button>
-            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            <button data-bs-toggle="modal" href="#exampleModalToggle1"
                 style="border: 1px solid white; border-radius: 6px; margin-bottom: 5px; background-color: transparent; color: white;"><small
                     style=" white-space: nowrap;
                         overflow: hidden; text-overflow: ellipsis;">
                     Đổi ảnh đại diện</small></button>
-            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            <button
                 style="border: 1px solid white; border-radius: 6px; background-color: transparent; color: white;"><small
                     style=" white-space: nowrap;
                         overflow: hidden; text-overflow: ellipsis;">Đổi ảnh bìa</small></button>
@@ -142,7 +149,7 @@
                                             margin-right: 13px;" alt="">Photo/Video</a>
                                 </button>
 
-                                <!-- Modal -->
+                                <!-- Modal đăng bài -->
                                 <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
                                     aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                                     <div class="modal-dialog modal-dialog-centered">
@@ -259,8 +266,36 @@
             </div>
         </div>
     </div>
+    <!-- Modal đổi ảnh đại diện-->
+    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel"><b style="margin-left: 170px;">Đăng ảnh đại
+                            diện</b></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <center><img id="img1" src="" width="45%" style="border-radius: 10px;">
+                    </center> <br>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile011"><img src="images/photo.png" style="width: 20px;
+                     margin-right: 13px;">Photo/Video</label>
+                        <input type="file" class="form-control" id="inputGroupFile011">
+                    </div>
+                </div>
+                <div class="modal-footer post-upload-textarea"
+                    style="padding: 0; padding-left: 10px; padding-right: 10px;">
+                    <textarea name="" placeholder="Mô tả?" id="" cols="30" rows="3"></textarea><br>
+                    <button style="width: 500px;" class="btn btn-primary">Đăng ảnh</button>
+                    <button style="width: 500px;" class="btn btn-danger">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Modal -->
+    <!-- Modal xem ảnh đại diện-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -345,10 +380,16 @@
     <script>
         let img = document.getElementById('img');
         let input = document.getElementById('inputGroupFile01');
+        let img1 = document.getElementById('img1');
+        let input1 = document.getElementById('inputGroupFile011');
 
         input.onchange = (e) => {
             if (input.files[0])
                 img.src = URL.createObjectURL(input.files[0]);
+        }
+        input1.onchange = (e) => {
+            if (input1.files[0])
+                img1.src = URL.createObjectURL(input1.files[0]);
         } 
     </script>
 
