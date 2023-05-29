@@ -1,13 +1,11 @@
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #f8f8f8;
-    transition: 0.5s;
-    color: rgba(37, 38, 38, 1);
-    color: #a0a5a8;
+    color: #62646a;
+    font: 400 16px/24px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } */
 }
-.modal-content{
+
+.modal-content {
     background-color: rgba(246, 245, 244, 1);
 }
 
@@ -26,11 +24,14 @@ header {
     margin-top: 0;
     color: rgba(90, 79, 72, 1);
     font-family: 'Nord Book';
+
 }
-label{
+
+label {
     color: #5A4F48;
     font-weight: bolder;
 }
+
 @keyframes showtop {
     from {
         opacity: 0;
@@ -47,20 +48,21 @@ label{
     from {
         opacity: 0;
         transform: translate(0, 50px);
-
+        transform: rotate(7deg) translate(5px, 5px);
     }
 
     to {
         opacity: 1;
         transform: translate(0, 0);
-        z-index: 100;
+        z-index: 1;
+        transform: rotate(-7deg) translate(5px, 5px);
     }
 }
 
 @keyframes showtop3 {
     from {
         opacity: 0;
-        transform: translate(-100px, 0px);
+        transform: translate(0, -100%);
     }
 
     to {
@@ -89,14 +91,15 @@ label{
 }
 
 .animationTop2 {
+
     opacity: 0;
-    animation: showtop2 0.4s ease-in-out 1 forwards;
+    animation: showtop2 0.8s ease-in-out 1 forwards;
 
 }
 
 .animationTop3 {
     opacity: 0;
-    animation: showtop3 0.5s ease-in-out 1 forwards;
+    animation: showtop3 0.4s ease-in-out 1 forwards;
 }
 
 .animationTop4 {
@@ -278,7 +281,7 @@ label{
     .card-header h5 {
         font-size: 15px;
     }
-    
+
 
 }
 
@@ -452,6 +455,7 @@ ul {
 .nav-link {
     color: #A89386;
 }
+
 .nav-link:focus {
     color: #5A4F48;
 }
@@ -631,8 +635,7 @@ a {
     color: #626262;
     background-color: var(--bg-color);
     width: 100%;
-    padding: 20px;
-    border-radius: 6px;
+    padding: 10px;
 }
 
 .post-reaction {
@@ -646,6 +649,12 @@ a {
     display: inline-flex;
     align-items: center;
     margin-right: 30px;
+    transition: 0.5s;
+}
+
+.activity-icons div:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .activity-icons div img {
@@ -727,6 +736,13 @@ a {
 .input-hbh:focus {
     background-color: transparent;
     box-shadow: none;
+    transform: translateX(-10px);
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    transform: translateX(-15px);
 }
 
 .dropdown-item:focus,
@@ -742,8 +758,10 @@ a {
 
 .nenTrangChu {
     border-radius: 6px;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.1);
     background-color: white;
 }
+
 
 .tinTuc2 {
     overflow-y: hidden;
@@ -761,13 +779,23 @@ a {
     color: white;
     border: none;
 }
-img:hover{
+
+.btnBorder {
+    border: none;
+    background-color: transparent;
+    border: none;
+}
+.btnBorder:focus{
+    border-bottom: 1px solid gray;
+}
+
+img:hover {
     cursor: pointer;
 }
 
 .nhan {
     color: #222;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0.05em;
 }
 
@@ -781,10 +809,7 @@ img:hover{
     border-color: rgba(90, 79, 72, 1);
     border-width: 0px;
     background-color: rgba(234, 229, 224, 1);
-    background-image: linear-gradient(90deg,
-            #A89386 0%,
-            rgba(234, 229, 224, 1) 55%,
-            #A89386 100%);
+    background-image: linear-gradient(to bottom right, rgba(234, 229, 224, 1) 50%, #f8f8f8 50%);
     border-style: solid;
     border-radius: inherit;
 
@@ -819,14 +844,71 @@ img:hover{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     font-style: normal;
-    
+    background-image: linear-gradient(to bottom left, white 50%, #f8f8f8 50%);
+
 }
 
 .nenTrang {
     background-color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.btnXacNhan{
+
+.btnXacNhan {
     background-color: #2779a7;
     color: white;
 }
+
+.split-background {
+    margin-top: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, white 50%, #f8f8f8 50%);
+    z-index: -100;
+}
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip2-text {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    transition: visibility 0.2s ease-in-out;
+}
+
+.tooltip2:hover .tooltip2-text {
+    visibility: visible;
+}
+
+.tooltip2-text img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 5px;
+}
+
+.tooltip2-caption {
+    font-size: 14px;
+}
+.lazy {
+    opacity: 0; /* Ẩn hình ảnh ban đầu */
+    transition: opacity 0.3s ease;
+  }
+  
+  .lazy.loaded {
+    opacity: 1; /* Hiển thị hình ảnh khi đã tải xong */
+  }
+  

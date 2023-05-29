@@ -122,7 +122,7 @@
                     style=" white-space: nowrap;
                         overflow: hidden; text-overflow: ellipsis;">
                     Đổi TT cá nhân</small></button>
-            <button
+            <button data-bs-toggle="modal" href="#exampleModalToggle1"
                 style="border: 1px solid white; border-radius: 6px; margin-bottom: 5px; background-color: transparent; color: white;"><small
                     style=" white-space: nowrap;
                         overflow: hidden; text-overflow: ellipsis;">
@@ -133,7 +133,34 @@
                         overflow: hidden; text-overflow: ellipsis;">Đổi ảnh bìa</small></button>
         </div>
     </div>
-    <!-- Modal trigger button -->
+    <!-- Modal đổi ảnh đại diện-->
+    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel"><b style="margin-left: 170px;">Đăng ảnh đại
+                            diện</b></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <center><img id="img1" src="" width="45%" style="border-radius: 10px;">
+                    </center> <br>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile011"><img src="images/photo.png" style="width: 20px;
+                     margin-right: 13px;">Photo/Video</label>
+                        <input type="file" class="form-control" id="inputGroupFile011">
+                    </div>
+                </div>
+                <div class="modal-footer post-upload-textarea"
+                    style="padding: 0; padding-left: 10px; padding-right: 10px;">
+                    <textarea name="" placeholder="Mô tả?" id="" cols="30" rows="3"></textarea><br>
+                    <button style="width: 500px; background-color: #5A4F48; border: none;" class="btn btn-primary">Đăng
+                        ảnh</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Modal Body -->
@@ -305,41 +332,41 @@
                     <b>Bài viết</b>
                     <hr>
                     <div class="write-post-container nenTrangChu img-thumbnail"
-                    style="margin-bottom: 20px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);">
-                    <div style=" display: flex; align-items: center; justify-content: space-between; ">
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" class="img-thumbnail" alt="">
+                        style="margin-bottom: 20px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);">
+                        <div style=" display: flex; align-items: center; justify-content: space-between; ">
+                            <div class="user-profile">
+                                <img src="images/avt.jpg" class="img-thumbnail" alt="">
+                                <div>
+                                    <p style="color: #A59565;"> Huỳnh Duy Quý</p>
+                                    <small>30-4-1975_09:18 pm</small>
+                                </div>
+                            </div>
                             <div>
-                                <p style="color: #A59565;"> Huỳnh Duy Quý</p>
-                                <small>30-4-1975_09:18 pm</small>
+                                <div class="btn-group">
+                                    <span class="btn dropdown-toggle" type="button" id="triggerId"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                    </span>
+                                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                                        <a class="dropdown-item" href="#">Báo cáo vi phạm</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="btn-group">
-                                <span class="btn dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-
-                                </span>
-                                <div class="dropdown-menu" aria-labelledby="triggerId">
-                                    <a class="dropdown-item" href="#">Báo cáo vi phạm</a>
+                        <div style="margin-top: 10px;">
+                            Hôm nay gất là dui đó nghen, hãy like cho tui 1 phát lào mấy a zai
+                            <center>
+                                <img src="images/nenDangNhap2.jpeg" class="img-thumbnail" width="100%" alt=""
+                                    style="margin-top: 10px;margin-bottom: 10px; border-radius: 6px;">
+                            </center>
+                            <div class="post-reaction">
+                                <div class="activity-icons">
+                                    <div><i class="fa-regular fa-thumbs-up"></i> &nbsp; 120</div>
+                                    <div><i class="fa-regular fa-comment"></i>&nbsp; 52</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div style="margin-top: 10px;">
-                        Hôm nay gất là dui đó nghen, hãy like cho tui 1 phát lào mấy a zai
-                        <center>
-                            <img src="images/nenDangNhap2.jpeg" class="img-thumbnail" width="100%" alt=""
-                                style="margin-top: 10px;margin-bottom: 10px; border-radius: 6px;">
-                        </center>
-                        <div class="post-reaction">
-                            <div class="activity-icons">
-                                <div><i class="fa-regular fa-thumbs-up"></i> &nbsp; 120</div>
-                                <div><i class="fa-regular fa-comment"></i>&nbsp; 52</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -431,26 +458,23 @@
                             <div style="overflow-y: hidden;overflow-y: scroll; height: 54vh; padding-right: 5px;">
                                 <div class="user-profile">
                                     <img src="images/avt.jpg" style="width: 35px;">
-                                    <div
-                                        style="margin-top: 40px;  width: 400px; height: 80px; border-radius: 10px;">
+                                    <div style="margin-top: 40px;  width: 400px; height: 80px; border-radius: 10px;">
                                         &nbsp; <b style="color: #5A4F48;">Lý Hiếu</b>
-                                        <textarea name="" id="" cols="50" rows="2" placeholder=""readonly
+                                        <textarea name="" id="" cols="50" rows="2" placeholder="" readonly
                                             style="padding-left: 10px;color: #626262;">Mới cắt tóc à. Sao không rủ t đi?</textarea>
                                     </div>
                                 </div>
                                 <div class="user-profile">
                                     <img src="images/avt.jpg" style="width: 35px;">
-                                    <div
-                                        style="margin-top: 40px; width: 400px; height: 80px; border-radius: 10px;">
+                                    <div style="margin-top: 40px; width: 400px; height: 80px; border-radius: 10px;">
                                         &nbsp; <b>Lê Trung</b>
-                                        <textarea name="" id="" cols="50" rows="2" placeholder="Mới đi cắt tóc à" readonly
-                                            style="padding-left: 10px;">T đẹp hơn m đây này</textarea>
+                                        <textarea name="" id="" cols="50" rows="2" placeholder="Mới đi cắt tóc à"
+                                            readonly style="padding-left: 10px;">T đẹp hơn m đây này</textarea>
                                     </div>
                                 </div>
                                 <div class="user-profile">
                                     <img src="images/avt.jpg" style="width: 35px;">
-                                    <div
-                                        style="margin-top: 40px;  width: 400px; height: 80px; border-radius: 10px;">
+                                    <div style="margin-top: 40px;  width: 400px; height: 80px; border-radius: 10px;">
                                         &nbsp; <b>Minh Quý</b>
                                         <textarea name="" id="" cols="50" rows="2" placeholder=""
                                             style="padding-left: 10px;">A trai chụp ảnh photoshop quá đi:))</textarea>
@@ -458,8 +482,7 @@
                                 </div>
                                 <div class="user-profile">
                                     <img src="images/avt.jpg" style="width: 35px;">
-                                    <div
-                                        style="margin-top: 40px; width: 400px; height: 80px; border-radius: 10px;">
+                                    <div style="margin-top: 40px; width: 400px; height: 80px; border-radius: 10px;">
                                         &nbsp; <b>Lê Trung Hiếu</b>
                                         <textarea name="" id="" cols="50" rows="2" placeholder="Mới đi cắt tóc à"
                                             style="padding-left: 10px;">Xin info cái máy ảnh</textarea>
@@ -467,14 +490,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8 text-center" style="position: relative;" >
-                            <img src="images/caMap.jpg" class="img-thumbnail nenTrang" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);" width="55%" alt="">
+                        <div class="col-8 text-center" style="position: relative;">
+                            <img src="images/caMap.jpg" class="img-thumbnail nenTrang"
+                                style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"
+                                width="55%" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- load ảnh -->
+    <script>
+        let img = document.getElementById('img');
+        let input = document.getElementById('inputGroupFile01');
+        let img1 = document.getElementById('img1');
+        let input1 = document.getElementById('inputGroupFile011');
+
+        input.onchange = (e) => {
+            if (input.files[0])
+                img.src = URL.createObjectURL(input.files[0]);
+        }
+        input1.onchange = (e) => {
+            if (input1.files[0])
+                img1.src = URL.createObjectURL(input1.files[0]);
+        } 
+    </script>
     <script>
         var header = document.querySelector('header');
         var lastScrollTop = 0;
