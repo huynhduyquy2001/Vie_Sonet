@@ -8,12 +8,22 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <style>
-  .container {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ .container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.hide {
+  display: none;
 }
 
   </style>
@@ -21,29 +31,23 @@
 
 <body style="padding: 5%;">
   <div class="container">
-    alo
+    <div class="box">Hover vào đây</div>
   </div>
-  <div style="height: 9000px;"></div>
   
 
 
 
 
   <script>
-    var loginBtn = document.getElementById("loginBtn");
-    var registerBtn = document.getElementById("registerBtn");
-    var loginForm = document.getElementById("loginForm");
-    var registerForm = document.getElementById("registerForm");
+   const box = document.querySelector('.box');
 
-    loginBtn.addEventListener("click", function () {
-      loginForm.style.display = "block";
-      registerForm.style.display = "none";
-    });
+box.addEventListener('mouseover', function() {
+  box.classList.add('hide');
+});
 
-    registerBtn.addEventListener("click", function () {
-      loginForm.style.display = "none";
-      registerForm.style.display = "block";
-    });
+box.addEventListener('mouseout', function() {
+  box.classList.remove('hide');
+});
 
   </script>
 
