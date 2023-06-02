@@ -14,6 +14,15 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f737751420.js"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width: 768px) {
+            .menuTrai {
+                display: none;
+            }
+    
+    
+        }
+    </style>
     <title>Tìm kiếm</title>
 </head>
 
@@ -96,178 +105,94 @@
     </header>
     <div class="container" id="container" style="transition: 0.5s;margin-top: 70px;">
         <div class="row">
-            <div class="col-md-3 frame-filter img-thumbnail nenTrang" style="background-color: white;">
-                <div>
-                    <h5><b class="nhan">Từ khóa bạn đã tìm</b></h5>
+            <div class="col-md-3 menuTrai ">
+                <div class="img-thumbnail nenTrangChu menuQuanLi" style="border-radius: 0; padding: 8px;">
+                    <div
+                        style=" position: relative; padding: 7px; padding-top: 10px; border: 1px solid rgba(210,199,188,1);">
+                        <div>
+                            <h5><b class="nhan">Từ khóa bạn đã tìm</b></h5>
 
-                    <center>Harry Potter</center>
-                    <hr style="opacity: 0.1;">
-                </div>
-                <div>
-                    <h5><b class="nhan">Bộ lọc</b></h5>
-                    <div style="margin-bottom: 20px; color: rgba(37, 38, 38, 1);">
+                            <center>Harry Potter</center>
+                            <hr style="opacity: 0.1;">
+                        </div>
+                        <div>
+                            <h5><b class="nhan">Bộ lọc</b></h5>
+                            <div style="margin-bottom: 20px; color: rgba(37, 38, 38, 1);">
 
-                        <small><i class="fa-solid fa-bars"></i> &nbsp;<b> Tất cả</b></small>
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <small> <i class="fa-light fa-users"></i> &nbsp;<b> Bạn bè</b></small>
+                                <small><i class="fa-solid fa-bars"></i> &nbsp;<b> Tất cả</b></small>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <small> <i class="fa-light fa-users"></i> &nbsp;<b> Bạn bè</b></small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- <div style="overflow-y: hidden;overflow-y: scroll; height: 79vh; margin-left: 10px;">
-                    <div>
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" class="img-thumbnail" alt="">
-                            <div>
-                                <label for="">Trần Văn Minh Híu</label>
-                                <small style="display: flex;">
-                                    <a class="dropdown-item" href="#"
-                                        style="background-color: rgba(234,229,224,0.8);border-color: rgba(90,79,72,1);">
-                                        <center>Đồng ý</center>
-                                    </a>
-                                    <a class="dropdown-item" href="#" style="background-color: #A89386; color: white;">
-                                        <center>Xóa</center>
-                                    </a>
-                                </small>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="btn-group">
-                                <div class="dropdown-menu" aria-labelledby="triggerId" style="padding: 0;">
-                                    <a class="dropdown-item" href="#"
-                                        style="background-color: rgba(234,229,224,0.8);border-color: rgba(90,79,72,1);">
-                                        <center>Đồng ý</center>
-                                    </a>
-                                    <a class="dropdown-item" href="#" style="background-color: #A89386; color: white;">
-                                        <center>Xóa</center>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" class="img-thumbnail" alt="">
-                            <div>
-                                <label for="">Trần Văn Minh Híu</label>
-                                <small style="display: flex;">
-                                    <a class="dropdown-item" href="#"
-                                        style="background-color: rgba(234,229,224,0.8);border-color: rgba(90,79,72,1);">
-                                        <center>Đồng ý</center>
-                                    </a>
-                                    <a class="dropdown-item" href="#" style="background-color: #A89386; color: white;">
-                                        <center>Xóa</center>
-                                    </a>
-                                </small>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="btn-group">
-                                <div class="dropdown-menu" aria-labelledby="triggerId" style="padding: 0;">
-                                    <a class="dropdown-item" href="#"
-                                        style="background-color: rgba(234,229,224,0.8);border-color: rgba(90,79,72,1);">
-                                        <center>Đồng ý</center>
-                                    </a>
-                                    <a class="dropdown-item" href="#" style="background-color: #A89386; color: white;">
-                                        <center>Xóa</center>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="user-profile">
-                            <img src="images/avt.jpg" class="img-thumbnail" alt="">
-                            <div>
-                                <label for="">Trần Văn Minh Híu</label>
-                                <small style="display: flex;">
-                                    <a class="dropdown-item" href="#"
-                                        style="background-color: rgba(234,229,224,0.8);border-color: rgba(90,79,72,1);">
-                                        <center>Đồng ý</center>
-                                    </a>
-                                    <a class="dropdown-item" href="#" style="background-color: #A89386; color: white;">
-                                        <center>Xóa</center>
-                                    </a>
-                                </small>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="btn-group">
-                                <div class="dropdown-menu" aria-labelledby="triggerId" style="padding: 0;">
-                                    <a class="dropdown-item" href="#"
-                                        style="background-color: rgba(234,229,224,0.8);border-color: rgba(90,79,72,1);">
-                                        <center>Đồng ý</center>
-                                    </a>
-                                    <a class="dropdown-item" href="#" style="background-color: #A89386; color: white;">
-                                        <center>Xóa</center>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
-            <div class="col-md-8 frame-filter img-thumbnail nenTrang"
-                style=" margin-left: 90px; background-color: white; opacity: 0.9;">
-                <h5><b class="nhan">Danh sách bạn bè (4)</b></h5>
-                <hr width="30%" style="opacity: 0.1;">
-                <div class="row" style="padding: 10px; overflow-y: hidden;overflow-y: scroll; max-height: 85vh;">
-                    <div class="col-md-6">
-                        <div
-                            style=" display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
-                            <div class="user-profile">
-                                <img src="images/avt.jpg" alt="" style="border-radius: 6px; width: 70px;">
-                                <div>
-                                    <label for="">Huỳnh Tuấn Vỹ</label> <br>
-                                    <small>Hoạt động: 1 phút trước</small>
+
+            <div class="col-md-8  img-thumbnail nenTrang"
+                style=" margin-left: 10px; background-color: white; opacity: 0.9; border-radius: 0; padding: 8px; ">
+                <div style="border: 1px solid rgba(210,199,188,1); padding: 10px;">
+                    <h5><b class="nhan">Danh sách bạn bè (4)</b></h5>
+                    <hr width="30%" style="opacity: 0.1;">
+                    <div class="row" style="padding: 10px; overflow-y: hidden;overflow-y: scroll; max-height: 85vh;">
+                        <div class="col-md-6">
+                            <div
+                                style=" display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                                <div class="user-profile">
+                                    <img src="images/avt.jpg" alt="" style="border-radius: 6px; width: 70px;">
+                                    <div>
+                                        <label for="">Huỳnh Tuấn Vỹ</label> <br>
+                                        <small>Hoạt động: 1 phút trước</small>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                <div>
+                                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div
-                            style=" display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
-                            <div class="user-profile">
-                                <img src="images/avt.jpg" alt="" style="border-radius: 6px; width: 70px;">
-                                <div>
-                                    <label for="">Huỳnh Tuấn Vỹ</label> <br>
-                                    <small>Hoạt động: 1 phút trước</small>
+                        <div class="col-md-6">
+                            <div
+                                style=" display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                                <div class="user-profile">
+                                    <img src="images/avt.jpg" alt="" style="border-radius: 6px; width: 70px;">
+                                    <div>
+                                        <label for="">Huỳnh Tuấn Vỹ</label> <br>
+                                        <small>Hoạt động: 1 phút trước</small>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                <div>
+                                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div
-                            style=" display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
-                            <div class="user-profile">
-                                <img src="images/avt.jpg" alt="" style="border-radius: 6px; width: 70px;">
-                                <div>
-                                    <label for="">Huỳnh Tuấn Vỹ</label> <br>
-                                    <small>Hoạt động: 1 phút trước</small>
+                        <div class="col-md-6">
+                            <div
+                                style=" display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                                <div class="user-profile">
+                                    <img src="images/avt.jpg" alt="" style="border-radius: 6px; width: 70px;">
+                                    <div>
+                                        <label for="">Huỳnh Tuấn Vỹ</label> <br>
+                                        <small>Hoạt động: 1 phút trước</small>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                <div>
+                                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div
-                            style=" display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
-                            <div class="user-profile">
-                                <img src="images/avt.jpg" alt="" style="border-radius: 6px; width: 70px;">
-                                <div>
-                                    <label for="">Huỳnh Tuấn Vỹ</label> <br>
-                                    <small>Hoạt động: 1 phút trước</small>
+                        <div class="col-md-6">
+                            <div
+                                style=" display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                                <div class="user-profile">
+                                    <img src="images/avt.jpg" alt="" style="border-radius: 6px; width: 70px;">
+                                    <div>
+                                        <label for="">Huỳnh Tuấn Vỹ</label> <br>
+                                        <small>Hoạt động: 1 phút trước</small>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                <div>
+                                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
