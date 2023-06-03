@@ -367,7 +367,7 @@ header.hidden {
 }
 
 a:hover {
-    color: #A89386;
+    color: #3B998B;
 }
 
 a {
@@ -838,6 +838,9 @@ img:hover {
 .card:hover {
     transform: translateX(-10px);
 }
+label:hover{
+    cursor: pointer;
+}
 
 .card-body {
     color: rgba(37, 38, 38, 1);
@@ -881,16 +884,16 @@ img:hover {
 .tooltip2-text {
     visibility: hidden;
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: -10%;
+    left: 85%;
     transform: translateX(-50%);
-    width: 200px;
+    min-width: 230px;
     padding: 10px;
     background-color: #f1f1f1;
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
-    transition: visibility 0.2s ease-in-out;
+
 }
 
 .tooltip2:hover .tooltip2-text {
